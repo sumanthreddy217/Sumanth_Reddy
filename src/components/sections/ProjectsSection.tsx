@@ -14,8 +14,8 @@ const projects = [
     ],
     icon: CheckSquare,
     gradient: "from-blue-500 to-purple-600",
-    github: "#",
-    demo: "#"
+    github: "https://github.com/sumanthreddy217/To-Do-List",
+    demo: "https://to-do-list-six-virid.vercel.app/"
   },
   {
     title: "Fire Detection System",
@@ -29,13 +29,13 @@ const projects = [
     ],
     icon: Flame,
     gradient: "from-red-500 to-orange-600",
-    github: "#",
+    github: "https://github.com/sumanthreddy217/Fire-Dectection",
     demo: "#"
   },
   {
     title: "Interactive Profile Card",
     description: "A responsive and interactive profile card component with modern CSS animations, social media links, and hover effects.",
-    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    technologies: ["HTML", "CSS", "Responsive Design"],
     features: [
       "Smooth animations",
       "Social media integration",
@@ -44,7 +44,7 @@ const projects = [
     ],
     icon: User,
     gradient: "from-green-500 to-teal-600",
-    github: "#",
+    github: "https://github.com/sumanthreddy217/Profile_Card",
     demo: "#"
   }
 ]
@@ -146,7 +146,7 @@ export function ProjectsSection() {
           <Button 
             variant="outline"
             className="btn-outline-hero"
-            onClick={() => window.open("https://github.com", "_blank")}
+            onClick={() => window.open("https://github.com/sumanthreddy217?tab=repositories", "_blank")}
           >
             <Github className="mr-2 h-5 w-5" />
             View All Projects on GitHub

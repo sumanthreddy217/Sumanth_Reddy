@@ -9,20 +9,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "sumanth.reddy@email.com",
-    href: "mailto:sumanth.reddy@email.com"
+    value: "sumanthreddy.k861@gmail.com",
+    href: "mailto:sumanthreddy.k861@gmail.com"
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/sumanth-reddy",
-    href: "https://linkedin.com/in/sumanth-reddy"
+    value: "linkedin.com/in/k-sumanth-reddy",
+    href: "https://linkedin.com/in/k-sumanth-reddy"
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/sumanthreddy",
-    href: "https://github.com/sumanthreddy"
+    value: "github.com/sumanthreddy217",
+    href: "https://github.com/sumanthreddy217"
   }
 ]
 
@@ -106,7 +106,7 @@ export function ContactSection() {
             <div className="pt-6">
               <Button 
                 className="btn-hero w-full"
-                onClick={() => window.open("#", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1wHcBt653iakiCrJ-RAqZZl9HWHzgWrzp/view?usp=drive_link", "_blank")}
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume

@@ -20,18 +20,18 @@ const skillCategories = [
     title: "Frontend Development",
     skills: [
       { name: "HTML", level: 90, icon: FileCode },
-      { name: "CSS", level: 85, icon: Layers },
-      { name: "JavaScript", level: 80, icon: Braces },
+      { name: "CSS", level: 80, icon: Layers },
+      { name: "JavaScript", level: 50, icon: Braces },
       { name: "Bootstrap", level: 85, icon: Smartphone },
-      { name: "React", level: 70, icon: Globe }
+      { name: "React", level: 30, icon: Globe }
     ]
   },
   {
     title: "Backend Development",
     skills: [
-      { name: "Python", level: 85, icon: Code },
-      { name: "Java", level: 75, icon: Coffee },
-      { name: "Flask", level: 70, icon: Server },
+      { name: "Python", level: 25, icon: Code },
+      { name: "Java", level: 25, icon: Coffee },
+      { name: "Flask", level: 20, icon: Server },
       { name: "MongoDB", level: 65, icon: Database },
       { name: "Node.js", level: 60, icon: Terminal }
     ]
@@ -42,8 +42,8 @@ const skillCategories = [
       { name: "Git", level: 80, icon: GitBranch },
       { name: "GitHub", level: 85, icon: GitBranch },
       { name: "VS Code", level: 90, icon: Settings },
-      { name: "Postman", level: 75, icon: Chrome },
-      { name: "YOLOv8", level: 60, icon: Zap }
+      { name: "Postman", level: 60, icon: Chrome },
+      { name: "YOLOv8", level: 15, icon: Zap }
     ]
   }
 ]

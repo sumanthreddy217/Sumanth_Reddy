@@ -42,7 +42,12 @@ export function Navigation() {
       <div className="container-modern">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-gradient">SUMANTH</span>
+            {/* <span className="text-2xl font-bold text-gradient">SUMANTH REDDY</span> */}
+            <img
+                  src="https://i.postimg.cc/ydzJ5nJ8/SR-logo.png"
+                  alt="SR-Logo"
+                  className="w-8 h-8 object-cover"
+                />
           </div>
 
           {/* Desktop Navigation */}
@@ -52,7 +57,7 @@ export function Navigation() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200 hover:scale-105"
+                  className="text-foreground hover:text-primary px-3 py-2 font-medium transition-colors duration-200 hover:scale-105"
                 >
                   {item.name}
                 </button>

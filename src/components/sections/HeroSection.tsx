@@ -28,7 +28,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow floating-animation">
                 <img
-                  src={profilePicture}
+                  src="https://i.postimg.cc/1RBKPZ51/Sumanth-Reddy.jpg"
                   alt="Karri Damodara Sai Sumanth Reddy"
                   className="w-full h-full object-cover"
                 />
@@ -60,7 +60,7 @@ export function HeroSection() {
             <Button 
               variant="outline"
               className="btn-outline-hero"
-              onClick={() => window.open("#", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1wHcBt653iakiCrJ-RAqZZl9HWHzgWrzp/view?usp=drive_link", "_blank")}
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
