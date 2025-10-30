@@ -5,24 +5,24 @@ import { Code2, Database, Layout, Server } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       icon: Layout,
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript",  "React", "Tailwind CSS", "Bootstrap"],
+      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Python", "Java"],
     },
     {
-      title: "Backend",
+      title: "Frameworks & Hosting",
       icon: Server,
-      skills: ["Python", "Java", "Node.js", "Express", ],
+      skills: ["TailwindCSS", "Bootstrap", "Vercel", "Netlify", "Render", "Cloudinary" ],
     },
     {
-      title: "Database",
+      title: "Database & Libraries",
       icon: Database,
-      skills: ["MongoDB", "MySQL", ],
+      skills: ["MongoDB", " React.js", "React-Toastify", ],
     },
     {
-      title: "Tools & Others",
+      title: "Developer Tools",
       icon: Code2,
-      skills: ["Git", "AWS", "Figma", "VS Code", "Postman"],
+      skills: ["Git/Github", "AWS", "Figma", "VS Code", "Postman"],
     },
   ];
 

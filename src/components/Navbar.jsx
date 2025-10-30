@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-lg"
+          ? "bg-background/80 backdrop-blur-md shadow-lg shadow-[#282a3dea]"
           : "bg-transparent"
       }`}
     >
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Right Side Controls */}
         <div className="flex items-center space-x-3">
-          <button className="bg-white rounded-lg px-2 py-1 cursor-pointer hidden lg:block">
+          <button className="bg-[#6d6d6db8] text-gray-800 rounded-lg px-2 py-1 hidden lg:block">
             Soon
           </button>
 
@@ -68,9 +68,11 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="flex items-center justify-center text-white cursor-pointer"
+              className={`flex items-center justify-center p-2 rounded-xl border border-white/20 
+                bg-white/5 backdrop-blur-lg shadow-md transition-all duration-300 
+                hover:bg-white/10 hover:scale-105 hover:shadow-white/20 cursor-pointer`}
             >
-              {isMobileMenuOpen ? ( <X className="h-4 w-4" /> ) : ( <Menu className="h-4 w-4" /> )}
+              {isMobileMenuOpen ? ( <X className="h-4 w-4 text-white transition-transform duration-300 rotate-90" /> ) : ( <Menu className="h-4 w-4 text-white transition-transform duration-300" /> )}
             </button>
           </div>
         </div>
@@ -78,12 +80,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-700 bg-black/70 backdrop-blur-md">
+        <div className="absolute top-16 left-0 w-full md:hidden bg-[#1f2026e9] backdrop-blur-md shadow-lg  border-t border-white/10 rounded-b-2xl animate-slideDown z-40">
           {navigation.map((item) => (
             <button
               key={item.name}
               onClick={() => scrollToSection(item.href)}
-              className="block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-[#FACC15] transition-colors duration-200"
+              className="block w-full text-center py-4 text-[15px] font-semibold text-gray-200 
+                   hover:text-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
             >
               {item.name}
             </button>

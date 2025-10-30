@@ -1,13 +1,17 @@
 import React from 'react'
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from 'framer-motion';
+import utkarsh from "../assets/UtkarshCoverImg.jpg"
+
+// https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop {E-commerce pic}
+// https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop {Wether app pic}
 
 const projects = [
   {
     title: "Utkarsh 2025",
     description:"Utkarsh2025 is Swarnandhra College's official fest website, featuring dynamic events, sleek design, and smooth navigation.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop", // replace with real path
-    tech: ["React", "TypeScript", "TailwindCSS", "Shadcn", "Lovable"],
+    image: utkarsh, // replace with real path
+    tech: ["React + vite", "TypeScript", "TailwindCSS", "Shadcn", "Lovable"],
     github: "https://github.com/sumanthreddy217/Utkarsh2025",
     demo: "https://utkarsh2k25.vercel.app/",
   },
@@ -21,11 +25,11 @@ const projects = [
   },
   {
     title: "Fire Detection System",
-    description:"Beautiful weather app with forecasts, interactive maps, and location-based alerts.",
+    description:"Developed a Fire Detection System, featuring a fully responsive interface. Designed to detect and alert fire incidents efficiently with a clean, user-friendly UI.",
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop",
-    tech: ["Html", "CSS", "Flask", "YOLOv8"],
+    tech: ["Html", "CSS", "JavaScript", "Flask", "YOLOv8"],
     github: "https://github.com/sumanthreddy217/Fire-Dectection",
-    demo: "https://demo.example.com/weather",
+    demo: "...",
   },
 ];
 
@@ -50,7 +54,7 @@ const ProjectsSection = () => {
           </p>
         </motion.div>
 
-        {/* -- Projects -- */}
+        {/* -- Projects Cards -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto ">
           {projects.map((project, index) => (
             <motion.article
@@ -67,7 +71,7 @@ const ProjectsSection = () => {
               }}
             >
               {/* Image area (only image scales on hover) */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-45 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -80,14 +84,14 @@ const ProjectsSection = () => {
 
               {/* Content */}
               <div className="p-6 bg-[#25253d] flex flex-col justify-between grow">
-                <h3 id={`project-${index}`} className="text-xl font-semibold text-white mb-3">
+                <h3 id={`project-${index}`} className="text-xl font-semibold text-white mb-1">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-400 text-sm leading-relaxed mb-2">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tech.map((t, i) => (
                     <span
                       key={i}

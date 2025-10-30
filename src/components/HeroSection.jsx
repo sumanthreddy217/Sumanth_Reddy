@@ -12,20 +12,19 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex justify-center items-center bg-dark-bg mt-3">
+    <section id="home" className="min-h-screen flex justify-center items-center bg-dark-bg">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-8">
           {/* Left - Profile Image */}
           <motion.div
             className="relative flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            whileHover={{ scale: 1.05 }}
           >
             <div className="relative">
               <div className="absolute inset-0 gradient-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
-              <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-85 md:h-85 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
+              <div className="relative w-50 h-50 lg:w-80 lg:h-80 sm:w-72 sm:h-72 md:w-85 md:h-85 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
                 <img
                   src="https://i.postimg.cc/1RBKPZ51/Sumanth-Reddy.jpg"
                   alt="Sumanth Reddy"
@@ -77,7 +76,8 @@ const HeroSection = () => {
                 Get in Touch
               </button>
 
-              <button className="flex justify-center items-center px-4 py-2 rounded-lg border border-gray-500 text-white hover:bg-gray-800 transition-colors duration-200 cursor-pointer">
+              <button className="flex justify-center items-center px-4 py-2 rounded-lg border border-gray-500 text-white hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
+              onClick={() => window.open("https://drive.google.com/file/d/1-RYRpFRsOVRu-vFrcSvhcU7RTfoaUof7/view?usp=sharing", "_blank")}>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </button>
