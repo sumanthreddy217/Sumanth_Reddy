@@ -53,6 +53,15 @@ h1 {
   line-height: 1.1;
 }
 
+
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateZ(0); /* Force GPU rendering on mobile */
+  transform: translateZ(0);
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid #2a2a2a;
