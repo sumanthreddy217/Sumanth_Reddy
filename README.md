@@ -29,7 +29,7 @@ A modern, fully responsive **Personal Portfolio Website** built with **React.js*
 
 ## 📁 Folder Structure
 
-`sumanthreddy/
+```sumanthreddy/
 ├── public/
 │ ├── favicon.ico
 │ └── images/
@@ -44,7 +44,7 @@ A modern, fully responsive **Personal Portfolio Website** built with **React.js*
 │
 ├── index.html
 ├── package.json
-└── README.md`
+└── README.md```
 
 ---
 
