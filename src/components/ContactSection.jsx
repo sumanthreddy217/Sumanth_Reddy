@@ -28,7 +28,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
     emailjs
       .sendForm(
-        "service_foyebug",
+        "service_iumyn1q",
         "template_robvazm",
         form.current,
         "6wVkcE2vFBtbWfa8c"
