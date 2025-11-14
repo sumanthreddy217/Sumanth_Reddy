@@ -26,7 +26,8 @@ const HeroSection = () => {
               <div className="absolute inset-0 gradient-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
               <div className="relative w-50 h-50 lg:w-80 lg:h-80 sm:w-72 sm:h-72 md:w-85 md:h-85 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
                 <img
-                  src="https://i.postimg.cc/1RBKPZ51/Sumanth-Reddy.jpg"
+                  {/* src="https://i.postimg.cc/1RBKPZ51/Sumanth-Reddy.jpg" */}
+                  src="https://i.postimg.cc/hGdff22P/Sumanth.jpg"
                   alt="Sumanth Reddy"
                   className="w-full h-full object-cover"
                 />
